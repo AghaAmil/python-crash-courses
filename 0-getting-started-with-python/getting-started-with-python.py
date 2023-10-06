@@ -9,7 +9,7 @@ Lesson Takeaway
 
 # Let's create some variables
 name = 'Amirhossein'
-lastName = 'Moravveji'
+last_name = 'Moravveji'
 city = 'Tehran'
 
 """
@@ -23,7 +23,7 @@ Lesson Takeaway
 
 # I know this code to display the variables
 print(name)
-print(lastName)
+print(last_name)
 print(city)
 
 """
@@ -47,10 +47,10 @@ print(74 * 36)
 # Divide the first number by the second number and print the result
 print(74 / 36)
 
-currentYear = 2023
-yearBorn = 1993
+current_year = 2023
+year_born = 1993
 print('Your age is :')
-print(currentYear - yearBorn)
+print(current_year - year_born)
 
 """
 Challenge 1: Display Variables and Strings
@@ -58,10 +58,10 @@ Create a Python script that defines two variables, one for your name and another
 statement to display a message like "My name is [name] and I am [age] years old.
 """
 
-userName = 'Aroochi'
+user_name = 'Aroochi'
 age = 2
 print('My name is: ')
-print(userName)
+print(user_name)
 print('and I am very young')
 print(age)
 
