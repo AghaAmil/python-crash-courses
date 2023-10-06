@@ -64,3 +64,23 @@ print('My name is: ')
 print(userName)
 print('and I am very young')
 print(age)
+
+"""
+# Lesson 4 - Working with Variables
+# Lesson Takeaway
+
+- You can run calculations using the values stored in variables
+- You can store the result of a calculation in a variable
+- Updating the value of a variable is called reassigning a variable
+"""
+
+num1 = 10
+num1 = 42
+print(num1)
+
+num1 = num1 + 4.3
+print(num1)
+
+num2 = 83
+num3 = 34
+print(83 % 34)
