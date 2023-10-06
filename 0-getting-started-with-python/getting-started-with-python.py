@@ -34,3 +34,33 @@ print(city)
 # You can access the value stored in a variable by calling its name
 # Numerical data should not be surrounded by quotation marks
 """
+
+# Add the two numbers and print the result.
+print(41 + 17)
+
+# Subtract the second number from the first number and print the result.
+print(17 - 41)
+
+# Multiply the two numbers and print the result.
+print(74 * 36)
+
+# Divide the first number by the second number and print the result
+print(74 / 36)
+
+currentYear = 2023
+yearBorn = 1993
+print('Your age is :')
+print(currentYear - yearBorn)
+
+"""
+Challenge 1: Display Variables and Strings
+Create a Python script that defines two variables, one for your name and another for your age. Then, use the print()
+statement to display a message like "My name is [name] and I am [age] years old.
+"""
+
+userName = 'Aroochi'
+age = 2
+print('My name is: ')
+print(userName)
+print('and I am very young')
+print(age)
