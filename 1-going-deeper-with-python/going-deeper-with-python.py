@@ -20,3 +20,15 @@ Lesson Takeaways
 """
 
 # change the previous lesson variables to snake_case variable names
+
+
+"""
+Lesson 3 - Applying Best Practices
+Lesson Takeaways
+
+- Spaces are not allowed in variable names
+- A variable name cannot start with a number
+- Best practices can help you avoid errors
+"""
+
+# change the previous lesson variables to snake_case variable names
