@@ -32,3 +32,54 @@ Lesson Takeaways
 """
 
 # change the previous lesson variables to snake_case variable names
+
+"""
+Lesson 4 - Input and Outputs
+Lesson Takeaways
+ 
+- inputs and outputs help machines communicate with the outside world
+- the input() instruction allows the user to enter a value into your program
+- the print() instruction is used to generate an output
+"""
+
+"""
+Challenge 1: Display Variables and Strings
+Create a Python script that defines two variables, one for your name and another for family name and then display them
+"""
+print('Enter you name and family name below: ')
+first_name = input()
+family_name = input()
+
+# the ' ' statement put a str (space) between the first name and family name
+full_name = first_name + ' ' + family_name
+
+print(full_name)
+
+"""
+Write a Python script that prompts the user to enter two numbers and then performs the following operations:
+
+Add the two numbers and print the result.
+Subtract the second number from the first number and print the result.
+Multiply the two numbers and print the result.
+Divide the first number by the second number and print the result.
+"""
+
+print('Enter two numbers and see the magic')
+number1 = input()
+number2 = input()
+
+print('Add the two numbers and print the result.')
+print(number1 + number2)
+
+print('You got the error right !?')
+
+# Will learn this section later
+
+# print('Subtract the second number from the first number and print the result.')
+# print(number2 - number1)
+#
+# print('Multiply the two numbers and print the result.')
+# print(number1 * number2)
+#
+# print('Divide the first number by the second number and print the result.')
+# print(number1 / number2)
