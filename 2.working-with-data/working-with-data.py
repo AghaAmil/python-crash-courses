@@ -27,3 +27,45 @@ print(type(var_float))
 # Let's check something interesting :)
 print(10 / 2)
 print(type(10 / 2))
+
+"""
+Lesson 2 - Data Conversion
+Lesson Takeaways
+
+- you can change the data type of a value with int(), float() and str()
+- there are implicit and explicit data type conversions in Python
+- str(), int(), float() instructions are explicit conversions
+"""
+
+# The issue existed in previous chapter "going deeper with python" is fixed in this lesson.
+print('Enter two number to see some math operations')
+number1 = float(input())
+number2 = float(input())
+
+print('Add the two numbers and print the result.')
+print(number1 + number2)
+
+print('Subtract the second number from the first number and print the result.')
+print(number2 - number1)
+
+print('Multiply the two numbers and print the result.')
+print(number1 * number2)
+
+print('Divide the first number by the second number and print the result.')
+print(number1 / number2)
+
+# Let's make some conversions
+var1 = '483'
+print(type(var1))
+print(type(int(var1)))
+
+# Examples of automatic data type conversion
+x = 5           # integer
+y = 2           # integer
+z = x/y         # float (implicit conversion)
+print(z)
+
+a = 3           # integer
+b = 1.5         # float
+c = a + b       # float
+print(c)
