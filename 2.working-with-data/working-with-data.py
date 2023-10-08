@@ -69,3 +69,18 @@ a = 3           # integer
 b = 1.5         # float
 c = a + b       # float
 print(c)
+
+"""
+Lesson 3 - Fixing Data Types
+Lesson Takeaways
+
+- you can use explicit data type conversions to avoid bugs in your programs
+- int() ensures that the user input is treated as an integer number
+- str() can help you concatenate numbers with text
+"""
+
+distance = 14
+metric = "km"
+
+print('The distance is :')
+print(str(distance) + metric)
