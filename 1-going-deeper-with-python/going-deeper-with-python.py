@@ -56,7 +56,7 @@ full_name = first_name + ' ' + family_name
 print(full_name)
 
 """
-Write a Python script that prompts the user to enter two numbers and then performs the following operations:
+Challenge 2: Write a Python script that prompts the user to enter two numbers and then performs the following operations:
 
 Add the two numbers and print the result.
 Subtract the second number from the first number and print the result.
@@ -83,3 +83,19 @@ print('You got the error right !?')
 #
 # print('Divide the first number by the second number and print the result.')
 # print(number1 / number2)
+
+"""
+Lesson 4 - Data Types
+Lesson Takeaways
+
+- computers store and process different data types differently
+- string is the data type for text
+- integer and float are data types for numbers
+
+"""
+
+# Consider below examplesAli
+print('Computer operate with values depends on the date type')
+print(3 + 8)
+print('Iran ' + 'Man')
+
