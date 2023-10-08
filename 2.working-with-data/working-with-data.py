@@ -84,3 +84,23 @@ metric = "km"
 
 print('The distance is :')
 print(str(distance) + metric)
+
+"""
+Lesson 4 - Comparison Operations
+Lesson Takeaways
+
+- the Boolean data type has one of two possible values: True or False
+- a comparison operation always results in a Boolean
+"""
+
+print('19 < 38.4')
+print(19 < 38.4)
+
+print('-934 > 2')
+print(-934 > 2)
+
+print(type(13 > 34))
+print(type(39 < 321))
+print(type(True))
+print(type(False))
+
