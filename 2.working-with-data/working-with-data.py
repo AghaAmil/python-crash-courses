@@ -104,3 +104,32 @@ print(type(39 < 321))
 print(type(True))
 print(type(False))
 
+"""
+Lesson 5 - Logical Operators
+Lesson Takeaways
+
+- logical operations take multiple Boolean values as input
+- logical operations produce a single Boolean value as output
+- "and" and "or" are examples of logical operations
+"""
+
+condition1 = False
+condition2 = True
+
+# and operator
+print('The "And" Operator')
+print('The "and" operation results in a True value only when all the inputs are True at the same time.')
+
+print(condition1 and condition1)
+print(condition1 and condition2)
+print(condition2 and condition1)
+print(condition2 and condition2)
+
+# or operator
+print('The "Or" Operator')
+print('The "or" logical operation results in a True value if at least one of the inputs is True.')
+print(condition1 or condition1)
+print(condition1 or condition2)
+print(condition2 or condition1)
+print(condition2 or condition2)
+
