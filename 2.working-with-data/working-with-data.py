@@ -113,6 +113,13 @@ Lesson Takeaways
 - "and" and "or" are examples of logical operations
 """
 
+"""
+Python is a case-sensitive language. 
+ 
+- Both "True" and "False" start with an uppercase letter.
+- Both "and" and "or" operators are lowercase in Python. 
+"""
+
 condition1 = False
 condition2 = True
 
@@ -133,3 +140,37 @@ print(condition1 or condition2)
 print(condition2 or condition1)
 print(condition2 or condition2)
 
+"""
+Lesson 6 - Combining Comparison and logical Operation
+Lesson Takeaways
+ 
+- You can store boolean values in variables
+- You can store the result of logical and comparison operations in variables
+- You can combine operations with logical and comparison operators
+"""
+
+"""
+This samples would be added later: 
+
+Write a Python expression that checks if a number x is both greater than 10 and less than 20.
+
+Given three variables a, b, and c, write a Python expression that checks if a is equal to b or c.
+
+Write a Python expression that checks if a string s contains both the letters 'a' and 'b'.
+
+Given two variables x and y, write a Python expression that checks if either x is equal to 5 or y is equal to 10.
+
+Write a Python expression that checks if a list nums contains at least one even number and at least one odd number.
+
+Given three variables p, q, and r, write a Python expression that checks if p is greater than q and q is greater than r.
+
+Write a Python expression that checks if a string s starts with either 'A' or 'B' and ends with 'Z'.
+
+Given two variables x and y, write a Python expression that checks if x is equal to 0 or y is not equal to 0.
+
+Write a Python expression that checks if a list words contains either the word 'hello' or the word 'world', or both.
+
+Given three variables a, b, and c, write a Python expression that checks if a is less than b or b is less than c, 
+but a is not less than c.
+
+"""
