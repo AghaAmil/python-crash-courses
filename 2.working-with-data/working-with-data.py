@@ -60,14 +60,14 @@ print(type(var1))
 print(type(int(var1)))
 
 # Examples of automatic data type conversion
-x = 5           # integer
-y = 2           # integer
-z = x/y         # float (implicit conversion)
+x = 5  # integer
+y = 2  # integer
+z = x / y  # float (implicit conversion)
 print(z)
 
-a = 3           # integer
-b = 1.5         # float
-c = a + b       # float
+a = 3  # integer
+b = 1.5  # float
+c = a + b  # float
 print(c)
 
 """
@@ -149,28 +149,5 @@ Lesson Takeaways
 - You can combine operations with logical and comparison operators
 """
 
-"""
-This samples would be added later: 
-
-Write a Python expression that checks if a number x is both greater than 10 and less than 20.
-
-Given three variables a, b, and c, write a Python expression that checks if a is equal to b or c.
-
-Write a Python expression that checks if a string s contains both the letters 'a' and 'b'.
-
-Given two variables x and y, write a Python expression that checks if either x is equal to 5 or y is equal to 10.
-
-Write a Python expression that checks if a list nums contains at least one even number and at least one odd number.
-
-Given three variables p, q, and r, write a Python expression that checks if p is greater than q and q is greater than r.
-
-Write a Python expression that checks if a string s starts with either 'A' or 'B' and ends with 'Z'.
-
-Given two variables x and y, write a Python expression that checks if x is equal to 0 or y is not equal to 0.
-
-Write a Python expression that checks if a list words contains either the word 'hello' or the word 'world', or both.
-
-Given three variables a, b, and c, write a Python expression that checks if a is less than b or b is less than c, 
-but a is not less than c.
-
-"""
+# The practices already mentioned in the sololearn website
+# Nothing to add
