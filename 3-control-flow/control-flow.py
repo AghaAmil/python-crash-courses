@@ -44,7 +44,7 @@ Lesson Takeaways
 - counters keep track of the number of iterations and avoid infinite loops
 - indentation and the colon : symbol are required for the code to run
 """
-
+# While Loop Example
 print('For example, a ticket seller at a theater will repeatedly sell tickets until all seats have been occupied')
 
 seat = 24
@@ -52,3 +52,28 @@ seat = 24
 while seat > 0:
     print('Cinema is selling tickets. Ticket Number is #' + str(seat))
     seat = seat - 1
+
+"""
+Lesson 2 - More On Iteration
+Lesson Takeaways
+ 
+- for loops are used when the number of iterations is known
+- you can solve real problems by combining comparison operations and iterations
+"""
+
+# more on comparison operation...
+print(5 == 5)  # is 5 equal to 5?
+print(5 == 7)  # is 5 equal to 7?
+print(5 != 7)  # is 5 different from 7?
+print(5 != 5)  # is 5 different from 5?
+print(5 <= 5)  # is 5 less than or equal to 5?
+print(5 >= 5)  # is 5 greater than or equal to 5?
+
+# a real world example
+password = 'secretP@ss'
+entered_pass = input("Enter the system password: ")
+
+while entered_pass != password:
+    entered_pass = input("Password is Wrong!! Try Again: ")
+
+print('Password is correct - Access Granted')
