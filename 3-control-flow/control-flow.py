@@ -35,3 +35,20 @@ itr = int(input('Input a positive integer to display a sequence of numbers from 
 
 for num1 in range(itr + 1):
     print(num1)
+
+"""
+Lesson 2 - While Loop
+Lesson Takeaways
+ 
+- you can apply iteration to your programs with the while loop
+- counters keep track of the number of iterations and avoid infinite loops
+- indentation and the colon : symbol are required for the code to run
+"""
+
+print('For example, a ticket seller at a theater will repeatedly sell tickets until all seats have been occupied')
+
+seat = 24
+
+while seat > 0:
+    print('Cinema is selling tickets. Ticket Number is #' + str(seat))
+    seat = seat - 1
