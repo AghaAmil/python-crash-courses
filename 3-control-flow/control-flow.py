@@ -11,7 +11,7 @@ Lesson Takeaways
 # Nothing to add
 
 """
-Lesson 4 - for loop
+Lesson 2 - for loop
 Lesson Takeaways
  
 - you can implement iteration into your programs with the for loop
@@ -37,7 +37,7 @@ for num1 in range(itr + 1):
     print(num1)
 
 """
-Lesson 2 - While Loop
+Lesson 3 - While Loop
 Lesson Takeaways
  
 - you can apply iteration to your programs with the while loop
@@ -54,7 +54,7 @@ while seat > 0:
     seat = seat - 1
 
 """
-Lesson 2 - More On Iteration
+Lesson 4 - More On Iteration
 Lesson Takeaways
  
 - for loops are used when the number of iterations is known
@@ -77,3 +77,41 @@ while entered_pass != password:
     entered_pass = input("Password is Wrong!! Try Again: ")
 
 print('Password is correct - Access Granted')
+
+"""
+Lesson 5 - Conditional Statements
+Lesson Takeaways
+ 
+- if-else statements are used to implement selection into your programs
+- the colon : symbol and the use of indentation are needed to prevent errors
+"""
+
+# challenges will be mentioned in the next lesson
+
+"""
+Lesson 6 - More On Conditional Statement
+Lesson Takeaways
+ 
+- skip the else statement when it is not needed
+- check for more conditions with the elif statement
+- nest if-else statements within each other
+"""
+
+age = int(input('Enter Your Age: '))
+is_student = int(input('Are You a Student ? (1.Student / 2.Not Student - Enter 1 or 2) '))
+
+if age <= 25:
+    if is_student == 1:
+        print('50% Student Discount')
+        print('Proceed Payment')
+    elif is_student == 2:
+        print('20% Junior Discount')
+        print('Proceed Payment')
+    else:
+        print('Enter Correct Number Based on Your Educational Status')
+elif age >= 65:
+    print('40% Discount For Retired')
+    print('Proceed Payment')
+else:
+    print('No Discount')
+int('40 Discount')
