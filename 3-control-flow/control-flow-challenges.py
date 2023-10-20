@@ -37,3 +37,15 @@ Prime Number Checker: Write a Python program that takes a number from the user a
 number or not. A prime number is a natural number greater than 1 that has no positive divisors other than 1 and 
 itself.
 """
+print('challenge Three \n')
+
+num = int(input('Enter an positive integer bigger than 1: '))
+
+if num > 1:
+    for i in range(2, num):
+        if num % i == 0:
+            print('Entered Number is NOT prime.')
+        else:
+            print('Entered Number is prime')
+else:
+    print('Please enter a valid number.')
