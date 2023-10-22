@@ -4,7 +4,7 @@ Lesson one - Lists
 
 print('Write a program that takes an input string and outputs the 3rd character of the string.')
 word = input('Enter a string: ')
-print(word[2])  # create a blank line
+print(word[2])
 
 # creating a simple list and print the inside indexes
 user_info = ['Amirhossein', 'Moravveji', 28, 'ID_007868', [6, 9, 1993]]
@@ -163,3 +163,23 @@ for x in num10:
     if x % 7 == 0:
         print('First number in the list which is dividable by 7')
         break
+
+"""
+Lesson 4 - Ranges
+"""
+
+print('\nWrite a program that takes two integers as input and outputs the range of numbers between the two inputs as a '
+      'list.')
+print('The output sequence should start with the first input number and end the last number')
+
+input_number1 = int(input('Enter the first number: '))
+input_number2 = int(input('Enter the second number: '))
+
+print(list(range(input_number1, input_number2 + 1)))
+
+print('\nSequence of numbers with step')
+print(list(range(5, 26, 2)))
+
+print('\n Want to go backward? No problem! We can also create a list of decreasing numbers, using a negative number '
+      'as the third argument.')
+print(list(range(20, 0, -2)))  # pay attention to the result
