@@ -81,12 +81,12 @@ print(1993 in user_info2)  # That's interesting
 print('QA Engineer' in user_info2)
 
 print('\nAnother cool Stuff')
-nums6 = [10, 9, 8, 7, 6, 5]
-nums6[0] = nums6[1] - 5
-if 4 in nums6:
-    print(nums6[3])
+num6 = [10, 9, 8, 7, 6, 5]
+num6[0] = num6[1] - 5
+if 4 in num6:
+    print(num6[3])
 else:
-    print(nums6[4])
+    print(num6[4])
 
 print('\nIf you use Persian swear words, this can tell (Free Version)')
 answer = input('Write sth, try to be nice: ')
@@ -96,8 +96,8 @@ else:
     print('Such a good boy!')
 
 print('\nAlso we have this as well: ')
-nums7 = [1, 2, 3]
-print(not 4 in nums7)
-print(4 not in nums7)
-print(not 3 in nums7)
-print(3 not in nums7)
+num7 = [1, 2, 3]
+print(not 4 in num7)
+print(4 not in num7)
+print(not 3 in num7)
+print(3 not in num7)
