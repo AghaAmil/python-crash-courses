@@ -183,3 +183,11 @@ print(list(range(5, 26, 2)))
 print('\n Want to go backward? No problem! We can also create a list of decreasing numbers, using a negative number '
       'as the third argument.')
 print(list(range(20, 0, -2)))  # pay attention to the result
+
+"""
+Lesson 4 - List Slices
+"""
+
+print('\nWrite a program that takes a string as input and outputs the last character of that string.')
+input_string = input('Enter whatever you want:')
+print(input_string[-1:])
