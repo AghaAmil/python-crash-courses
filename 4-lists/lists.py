@@ -101,3 +101,65 @@ print(not 4 in num7)
 print(4 not in num7)
 print(not 3 in num7)
 print(3 not in num7)
+
+"""
+Lesson 3 - For Loops
+"""
+
+print('\nGiven a list of numbers, calculate their sum using a for loop.')
+num8 = [42, 8, 7, 1, 0, 124, 8897, 555, 3, 67, 99]
+print(num8)
+
+sum_of_numbers = 0
+for numbers in num8:
+    sum_of_numbers += numbers
+
+print(sum_of_numbers)
+
+print('\nWhat is the output of this code?')
+num9 = [1, 2, 3, 4]
+res = 0
+
+for x in num9:
+    if x % 2 == 0:
+        continue
+    else:
+        res += x
+
+print(res)
+
+print('\nFill in the blanks to loop over the list and output the numbers which are bigger than 4 and smaller than 25.')
+num_list = [1, 5, 9, 10, 2, 11, 24, 90, 100, 17, 25, 645, 42, 50, 22, 14, 40, 23, 24, 87, 66, 54]
+
+for x in num_list:
+    if 4 < x < 25:
+        print(x)
+
+print('\nThe code below outputs each item in the list and adds an exclamation mark at the end:')
+words = ["hello", "world", "spam", "eggs", 'kir', 'koon', 'kos khol', 'antar']
+
+for x in words:
+    print(x + '!')
+
+print('\nA for loop can be used to iterate over strings.')
+string_1 = "testing for loops and iteration concepts and other stuff"
+
+count = 0
+count_double = 0
+for x in string_1:
+    if x == 't':
+        count += 1
+
+print(count)
+print(count_double)
+
+# later write a program to check if there repeated letter one after each other in a string
+print("\nSomething that i've created myself.")
+num10 = [33, 27, 82, 43, 87, 873, 39, 83, 28, 73, 75, 735, 183]
+print(num10)
+
+for x in num10:
+    print(x)
+    if x % 7 == 0:
+        print('First number in the list which is dividable by 7')
+        break
