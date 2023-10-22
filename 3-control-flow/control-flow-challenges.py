@@ -43,9 +43,10 @@ num = int(input('Enter an positive integer bigger than 1: '))
 
 if num > 1:
     for i in range(2, num):
-        if num % i == 0:
-            print('Entered Number is NOT prime.')
-        else:
-            print('Entered Number is prime')
+        if (num % i) == 0:
+            print(num, "is not a prime number")
+            break
+    else:
+        print(num, "is a prime number")
 else:
-    print('Please enter a valid number.')
+    print(num, "is not a prime number")
