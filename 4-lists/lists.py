@@ -180,7 +180,7 @@ print(list(range(input_number1, input_number2 + 1)))
 print('\nSequence of numbers with step')
 print(list(range(5, 26, 2)))
 
-print('\n Want to go backward? No problem! We can also create a list of decreasing numbers, using a negative number '
+print('\nWant to go backward? No problem! We can also create a list of decreasing numbers, using a negative number '
       'as the third argument.')
 print(list(range(20, 0, -2)))  # pay attention to the result
 
@@ -191,3 +191,26 @@ Lesson 4 - List Slices
 print('\nWrite a program that takes a string as input and outputs the last character of that string.')
 input_string = input('Enter whatever you want:')
 print(input_string[-1:])
+
+list_of_squares = [0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144]
+print(list_of_squares)
+print('Display list[3:9]')
+print(list_of_squares[3:9])
+print('Display list[0:5]')
+print(list_of_squares[0:5])
+print('Display list[1:11:2]')
+print(list_of_squares[1:11:2])
+print('Display list[:3]')
+print(list_of_squares[:3])
+print('Display list[6:]')
+print(list_of_squares[:6])
+print('Display list[7:2:-1]')
+print(list_of_squares[7:2:-1])
+print('Display list[3:-2]')
+print(list_of_squares[3:-2])
+
+print('Enter whatever string you want, i will reverse it :) ')
+input_word = input('Enter Your word: ')
+print(input_word[::-1])
+print('Your Correct word/sentence:')
+print(input_word)
