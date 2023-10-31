@@ -14,6 +14,14 @@ ch2_c = float(input('Enter a value to be stored in variable "c" (Input Type Is F
 print('True is printed if a if a is equal to b or c')
 print((ch2_a == ch2_b) or (ch2_a == ch2_c))
 
+# This program gets an integer as an input from the user and prints the next multiple of 10 of the input.
+
+print('\nChallenge 3')
+input_number = int(input('Enter an integer: '))
+multiple_factor = input_number // 10
+
+print((multiple_factor + 1) * 10)
+
 # The following challenges will be added later.
 
 """
