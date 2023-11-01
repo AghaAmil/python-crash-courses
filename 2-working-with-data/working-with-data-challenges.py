@@ -1,11 +1,13 @@
 # Some Challenges
 #
-print('# Write a Python expression that checks if a number x is both greater than 10 and less than 20.')
+print('Challenge 1')
+print('Write a Python expression that checks if a number x is both greater than 10 and less than 20.')
 
 ch1_num = float(input('Enter a number x: (Input Type Is Float)'))  # a text displayed when input prompt is executed
 print((ch1_num > 10) and (ch1_num < 20))
 
-print('Given three variables a, b, and c, write a Python expression that checks if a is equal to b or c.')
+print('\nChallenge 2')
+print('\nGiven three variables a, b, and c, write a Python expression that checks if a is equal to b or c.')
 ch2_a = float(input('Enter a value to be stored in variable "a" (Input Type Is Float)'))
 ch2_b = float(input('Enter a value to be stored in variable "b" (Input Type Is Float)'))
 ch2_c = float(input('Enter a value to be stored in variable "c" (Input Type Is Float)'))
@@ -15,8 +17,8 @@ print('True is printed if a if a is equal to b or c')
 print((ch2_a == ch2_b) or (ch2_a == ch2_c))
 
 # This program gets an integer as an input from the user and prints the next multiple of 10 of the input.
-
 print('\nChallenge 3')
+print('This program gets an integer as an input from the user and prints the next multiple of 10 of the input.')
 input_number = int(input('Enter an integer: '))
 multiple_factor = input_number // 10
 
