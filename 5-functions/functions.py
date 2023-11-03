@@ -27,8 +27,8 @@ sample_list += [20, 21, 22]
 print('Some extra numbers is added and the now the length is: ')
 print(len(sample_list))
 
-# input_str = input('Enter any strings and python will tell how many characters are used in your str: ')
-# print(len(input_str))
+input_str = input('Enter any strings and python will tell how many characters are used in your str: ')
+print(len(input_str))
 
 # append()
 print('\nAppend() Function')
