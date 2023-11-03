@@ -169,3 +169,32 @@ def greeting():
 greeting()
 
 # More complex examples will be provided later
+
+"""
+Lesson 5 - Function Arguments
+"""
+print('\nFunction Arguments')
+
+
+def summer(a, b, c):
+    print(a + b + c)
+
+
+print('Enter three numbers to get it\'s sum')
+first_num = input('Enter the first number: ')
+second_num = input('Enter the second number: ')
+third_num = input('Enter the third number: ')
+
+summer(first_num, second_num, third_num)
+
+
+
+
+list_of_nums = [3, 4, 972, 48, 27, 297, 83, 15, 37, 93, 74, 67, 98, 30, 10, 973, 3810, 973, 28, 34, 74, 93, 82, 23, 1]
+print(list_of_nums)
+
+
+
+def decider(list)
+
+# More complex examples will be provided later
