@@ -27,8 +27,8 @@ sample_list += [20, 21, 22]
 print('Some extra numbers is added and the now the length is: ')
 print(len(sample_list))
 
-input_str = input('Enter any strings and python will tell how many characters are used in your str: ')
-print(len(input_str))
+# input_str = input('Enter any strings and python will tell how many characters are used in your str: ')
+# print(len(input_str))
 
 # append()
 print('\nAppend() Function')
@@ -147,3 +147,25 @@ print(some_text.upper())
 some_text1 = 'I LOVE ULTRA BIG BOOBS VERY MUCH :)) lol'
 print(some_text1)
 print(some_text1.lower())
+
+"""
+Lesson 4 - Making Your Own Functions
+"""
+print('\nMaking Your Own Function')
+
+
+def first_function():
+    print('Welcome to Python Functions World!')
+
+
+first_function()
+
+
+def greeting():
+    user = input("Enter Your Name: ")
+    print('Hello,', user, "chaghal! :))")
+
+
+greeting()
+
+# More complex examples will be provided later
