@@ -92,3 +92,58 @@ x = [2, 4, 6, 2, 7, 2, 9]
 print(x)
 x.reverse()
 print(x)
+
+"""
+Lesson 3 - Strings Functions
+"""
+
+# format()
+print('\nFormat() Function')
+
+random_num = [5, 6, 7, 8]
+str1 = "Numbers: {0}-{1}-{2}-{3}".format(random_num[0], random_num[1], random_num[2], random_num[3], )
+print(str1)
+
+# another example:
+print("{0}{1}{0}--{2}".format('abc', 23, 'def'))
+
+# You can also name the placeholders, instead of the index numbers.
+print("{x}, {y}, {z}".format(x=5, y='foooz', z=10))
+
+# join()
+print('\nJoin() Function')
+
+# join all words in the list with "--" in form of a string
+random_list = ['Amir', 'Ali', 'Masoud', 'Mammal']
+print(random_list)
+print("--".join(random_list))
+
+# join all the all by * and some spaces
+random_list1 = ['Apple', 'Orange', 'Cucumber', 'Strawberry']
+print(random_list1)
+print(" * ".join(random_list1))
+
+# split()
+print('\nSplit() Function')
+
+# separate words in string by space
+random_str = 'Hello, my name is Amirhossein. and I\'m 30 years old :)'
+print(random_str)
+print(random_str.split(' '))
+
+# replace()
+print('\nReplace() Function')
+random_str1 = 'Hello Michael'
+print(random_str1)
+print(random_str1.replace('Michael', 'World!'))
+
+# upper() & lower()
+print('\nUpper() & Lower() Functions')
+
+some_text = 'I love encyclopedia very much'
+print(some_text)
+print(some_text.upper())
+
+some_text1 = 'I LOVE ULTRA BIG BOOBS VERY MUCH :)) lol'
+print(some_text1)
+print(some_text1.lower())
