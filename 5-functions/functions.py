@@ -188,3 +188,28 @@ third_num = int(input('Enter the third number: '))
 summer(first_num, second_num, third_num)
 
 # More complex examples will be provided later
+
+"""
+Lesson 6 - Returning From Functions
+"""
+print('\nIn which year you are born calculator')
+
+
+def year_born_calculator(age):
+    return 2023 - age
+
+
+print(year_born_calculator(30))
+print(year_born_calculator(53))
+print(year_born_calculator(87))
+
+# A function can only return once, thus, if you need to return multiple values, you can use a list.
+print('\nreturn two values')
+
+
+def multiples(x, y):
+    return [x * 2.5, y * 3.5]
+
+
+print(multiples(4, 9))
+print(multiples(2.4, 3.8))
