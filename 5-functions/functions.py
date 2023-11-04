@@ -181,9 +181,9 @@ def summer(a, b, c):
 
 
 print('Enter three numbers to get it\'s sum')
-first_num = input('Enter the first number: ')
-second_num = input('Enter the second number: ')
-third_num = input('Enter the third number: ')
+first_num = int(input('Enter the first number: '))
+second_num = int(input('Enter the second number: '))
+third_num = int(input('Enter the third number: '))
 
 summer(first_num, second_num, third_num)
 
