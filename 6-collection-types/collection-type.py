@@ -19,15 +19,15 @@ car_info = {
     'year': 2024
 }
 
-print('Consider the car info catalogue and enter a correct key to get the value.')
+print('\nConsider the car info catalogue and enter a correct key to get the value.')
 print(car_info)
 
-car_key = input('Enter the key: ')
+car_key = input('\nEnter the key: ')
 
-if car_key in car_info:
-    print(car_info[car_key])
-else:
-    print('Please enter a correct key')
+while not car_key in car_info:
+    car_key = input('Please enter a correct key: ')
+
+print(car_info[car_key])
 
 """
 Lesson 2 - Dictionary Functions
@@ -49,7 +49,7 @@ country_data = {
     'Italy': 74
 }
 
-country = input('Enter the country\'s name: ')
+country = input('\nEnter the country\'s name: ')
 print(country_data.get(country, 'Not found'))
 
 """
@@ -60,6 +60,7 @@ names = ('amir', 'ali', 'hasan', 'asgar')
 names1 = 'akbar', 'asghar', 'ahmad', 'antar'  # without parentheses
 names2 = 1, (1, 2, 3), 2, 3, 'pashm'  # nested tuples
 
+print('')
 print(names)
 print(names[0])
 print(names[1])
@@ -89,7 +90,7 @@ contacts = [
     ('Bob', 18)
 ]
 
-contact_name = input('Enter the name of the person in the contacts to get the details: ')
+contact_name = input('\nEnter the name of the person in the contacts to get the details: ')
 result = ''
 
 for i in range(len(contacts)):
@@ -100,3 +101,64 @@ for i in range(len(contacts)):
         result = "Not Found"
 
 print(result)
+
+"""
+lesson 4 - Tuples Unpacking
+"""
+
+sample_numbers = (1, 2, 3)
+A, B, C = sample_numbers
+print('')
+print(sample_numbers)
+print(A)
+print(B)
+print(C)
+
+x, y, z = [1, 2, 3]
+print('\nValues x, y, z respectively:', x, y, z)
+
+# unpacking and swapping numbers
+x, y, z = y, z, x
+
+print('\nValues x, y, z after swapping: ', x, y, z)
+
+# Another modal of tuple unpacking
+a, b, *c, d = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print('a is equal to: ', a)
+print('b is equal to: ', b)
+print('c is equal to: ', c)
+print('d is equal to: ', d)
+
+# having range for tuples unpacked
+e, f, g, h, *i, j, k = range(20)
+print('e is equal to: ', e)
+print('f is equal to: ', f)
+print('g is equal to: ', g)
+print('h is equal to: ', h)
+print('i is equal to: ', i)
+print('j is equal to: ', j)
+print('k is equal to: ', k)
+
+"""
+Tuples can be used to output multiple values from a function. You need to make a function called calc(), 
+that will take the side length of a square as its argument and return the perimeter and area using a tuple. The 
+perimeter is the sum of all sides, while the area is the square of the side length.
+
+Sample Input
+3
+
+Sample Output
+Perimeter: 12
+Area: 9
+"""
+
+
+def calc(x):
+    return x * 4, x ** 2
+
+
+side = int(input("Enter the Square Dimension: "))
+p, a = calc(side)
+
+print("Perimeter: " + str(p))
+print("Area: " + str(a))
