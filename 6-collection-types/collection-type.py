@@ -162,3 +162,31 @@ p, a = calc(side)
 
 print("Perimeter: " + str(p))
 print("Area: " + str(a))
+
+"""
+Lesson 5 - Sets
+"""
+
+sample_set = {1, 2, 3, 4, 5, 6}
+print(sample_set)
+
+print('3 in the set above is: ', 3 in sample_set)
+
+# add and remove
+print('\nAdd & Remove from above set.')
+sample_set.add(7)
+sample_set.remove(1)
+
+print(sample_set)
+
+# combine set using math operations
+first_set = {1, 2, 3, 4, 5, 6}
+second_set = {4, 5, 6, 7, 8, 9}
+
+print('\nFirst set: ', first_set)
+print('\nSecond set: ', second_set)
+
+print('Union Operation using | of above sets: ', first_set | second_set)
+print('Intersection Operation using & of above sets: ', first_set & second_set)
+print('Difference Operation using - of above sets: ', first_set - second_set)
+print('Symmetric Difference Operation using - of above sets: ', first_set ^ second_set)
