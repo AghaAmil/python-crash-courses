@@ -190,3 +190,15 @@ print('Union Operation using | of above sets: ', first_set | second_set)
 print('Intersection Operation using & of above sets: ', first_set & second_set)
 print('Difference Operation using - of above sets: ', first_set - second_set)
 print('Symmetric Difference Operation using - of above sets: ', first_set ^ second_set)
+
+"""
+Lesson 5 - List Comprehensions
+"""
+
+# a list comprehension of cubes
+cubes = [i ** 3 for i in range(6)]
+print(cubes)
+
+# a list comprehension with a condition
+even = [i ** 2 for i in range(10) if i % 2 == 0]
+print(even)
