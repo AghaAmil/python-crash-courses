@@ -49,3 +49,29 @@ memoization.
 
 -Pure functions are more difficult to write in some situations.
 """
+
+"""
+Lesson 2 - Lambdas
+"""
+
+
+def polynomial(x):
+    return x ** 2 + 5 * x + 4
+
+
+print('')
+print(polynomial(5))
+
+# Lambdas
+print((lambda x: x ** 2 + 5 * x + 4)(-4))
+
+"""
+Write a function that calculates the new price of an item after the discount using lambda function
+
+Sample Input
+50
+10
+
+Sample Output
+45.0
+"""
