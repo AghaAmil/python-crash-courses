@@ -84,3 +84,35 @@ list_of_numbers1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(list_of_numbers1)
 
 print(list(filter(lambda x: x % 2 == 0, list_of_numbers1)))
+
+"""
+Generators
+"""
+
+
+def generator():
+    i = 5
+    while i > 0:
+        yield i
+        i -= 1
+
+
+for i in generator():
+    print(i)
+
+"""
+The yield statement is used to define a generator, replacing the return of a function to provide a result to its 
+caller without destroying local variables.
+
+Due to the fact that they yield one item at a time, generators don't have the memory restrictions of lists. 
+In fact, they can be infinite!
+"""
+
+
+def even_num_func(x):
+    for num in range(x):
+        if num % 2 == 0:
+            yield num
+
+
+print(list(even_num_func(25)))
