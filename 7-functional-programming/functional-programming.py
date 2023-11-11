@@ -174,3 +174,45 @@ worker_family_name = input('Enter your family name: ')
 print('')
 
 User(worker_name, worker_family_name)
+
+"""
+Lesson 6 - Recursion
+"""
+
+
+def factorial(x):
+    if x == 1:
+        return 1
+    else:
+        return x * factorial(x - 1)
+
+
+print(factorial(5))
+"""
+The base case acts as the exit condition of the recursion.
+Not adding a base case results in infinite function calls, crashing the program.
+"""
+
+"""
+How the code works:
+
+x = 5 --> factorial(5)          return --> 5 * factorial(4)             calculation = 5 * 24 = 120      ^
+next ---> factorial(4)          return --> 4 * factorial(3)             calculation = 4 * 6 = 24        ^
+next ---> factorial(3)          return --> 3 * factorial(2)             calculation = 3 * 2 = 6         ^
+next ---> factorial(2)          return --> 2 * factorial(1) = 1         calculation = 2 * 1 = 2         ^
+"""
+
+
+def is_even(x):
+    if x == 0:
+        return True
+    else:
+        return is_odd(x - 1)
+
+
+def is_odd(x):
+    return not is_even(x)
+
+
+print(is_odd(17))
+print(is_even(23))
