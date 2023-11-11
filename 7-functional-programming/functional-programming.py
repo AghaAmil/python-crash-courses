@@ -116,3 +116,14 @@ def even_num_func(x):
 
 
 print(list(even_num_func(25)))
+
+
+# New trick it words
+def makeWord():
+    word = ''
+    for char in 'amirhossein':
+        word += char
+        yield word
+
+
+print(list(makeWord()))
