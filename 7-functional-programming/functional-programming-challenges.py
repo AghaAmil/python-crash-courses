@@ -101,3 +101,36 @@ def invoice(num):
 
 
 invoice(input('\nEnter Your invoice Number: '))
+
+"""
+The given code defines a recursive function convert(), which needs to convert its argument from decimal to binary.
+However, the code has an error.
+Fix the code by adding the base case for the recursion, then take a number from user input and call the convert()
+function, to output the result.
+
+Sample Input
+8
+
+Sample Output
+1000
+"""
+
+
+# Corrected function
+def convert(num):
+    if num == 0:
+        return 0
+    else:
+        return num % 2 + 10 * convert(num // 2)
+
+
+int_number = int(input('\nEnter an integer to convert it to binary number: '))
+print('The converted number to binary is: ', convert(int_number))
+
+"""
+Calculation for num = 3
+
+convert(3)   -->     3 % 2 + 10 * convert(3 // 2) --> 1 + 10 * convert(1) --> 1 + 10 x 1 = 11
+convert(1)   -->     1 % 2 + 10 * convert(1 // 2) --> 1 + 10 * convert(0) --> 1 + 0
+
+"""
