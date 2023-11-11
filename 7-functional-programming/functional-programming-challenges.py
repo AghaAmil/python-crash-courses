@@ -41,3 +41,30 @@ Sample Input
 Sample Output
 [11, 13, 17, 19]
 """
+
+
+# prime number: [1, 2, 3, 5, 7, 11 ...]
+
+
+def isPrime(x):
+    if x < 2:
+        return False
+    elif x == 2:
+        return True
+    for num in range(2, x):
+        if x % num == 0:
+            return False
+    return True
+
+
+def primeGenerator(num1, num2):
+    for i in range(num1, num2):
+        if isPrime(i):
+            yield i
+
+
+print('\nWrite a code to output the prime numbers in the given range (between the two arguments). ')
+input1 = int(input('Enter the first number: '))
+input2 = int(input('Enter the second number: '))
+
+print(list(primeGenerator(input1, input2)))
