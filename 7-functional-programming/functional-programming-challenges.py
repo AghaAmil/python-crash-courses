@@ -68,3 +68,36 @@ input1 = int(input('Enter the first number: '))
 input2 = int(input('Enter the second number: '))
 
 print(list(primeGenerator(input1, input2)))
+
+"""
+You are working on an invoicing system.
+The system has an already defined invoice() function, which takes the invoice number as argument and outputs it.
+You need to add a decorator for the invoice() function, that will print the invoice in the following format:
+
+Sample Input
+42
+
+Sample Output
+*********
+INVOICE #42
+*********
+END OF PAGE
+"""
+
+
+def decor(func):
+    def invoice_temp(num):
+        print('*********')
+        func(num)
+        print('*********')
+        print("END OF PAGE")
+
+    return invoice_temp
+
+
+@decor
+def invoice(num):
+    print('INVOICE #', num)
+
+
+invoice(input('\nEnter Your invoice Number: '))
