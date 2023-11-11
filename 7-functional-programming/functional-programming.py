@@ -86,7 +86,7 @@ print(list_of_numbers1)
 print(list(filter(lambda x: x % 2 == 0, list_of_numbers1)))
 
 """
-Generators
+Lesson 4 - Generators
 """
 
 
@@ -127,3 +127,50 @@ def makeWord():
 
 
 print(list(makeWord()))
+
+"""
+Lesson 5 - Decorators
+"""
+
+
+def decor(func):
+    def wrap():
+        print("============")
+        func()
+        print("============")
+
+    return wrap
+
+
+def hello_world():
+    print('Hello World!')
+
+
+decorated = decor(hello_world)
+decorated()
+
+
+# new pattern
+def decory(func):
+    def greeting(name, surname):
+        print('******** Apple INC ********')
+        print('***************************')
+        print('')
+        func(name, surname)
+        print('')
+        print('***************************')
+        print('****** Enjoy Shotory ******')
+
+    return greeting
+
+
+@decory
+def User(name, surname):
+    print('Welcome to our company ' + name + ' ' + surname + '. Have a good day')
+
+
+worker_name = input('Enter your first name: ')
+worker_family_name = input('Enter your family name: ')
+print('')
+
+User(worker_name, worker_family_name)
