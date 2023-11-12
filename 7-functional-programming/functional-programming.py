@@ -216,3 +216,17 @@ def is_odd(x):
 
 print(is_odd(17))
 print(is_even(23))
+
+"""
+Lesson 7 - *args and **kwargs
+"""
+
+
+def printer(x, y, *args, **kwargs):
+    print(x)
+    print(y)
+    print(args)
+    print(kwargs)
+
+
+printer(2, 3, 4, 5, 6, 7, a=8, b=9)

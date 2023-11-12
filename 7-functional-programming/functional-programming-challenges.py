@@ -132,5 +132,21 @@ Calculation for num = 3
 
 convert(3)   -->     3 % 2 + 10 * convert(3 // 2) --> 1 + 10 * convert(1) --> 1 + 10 x 1 = 11
 convert(1)   -->     1 % 2 + 10 * convert(1 // 2) --> 1 + 10 * convert(0) --> 1 + 0
+"""
 
 """
+The given code defined a function called my_min(), which takes two arguments and returns the smaller one.
+You need to improve the function, so that it can take any number of variables, so that the function call works.
+"""
+
+
+# Improved function
+def my_min(*args):
+    r = args[0]
+    for num in args:
+        if num < r:
+            r = num
+    return r
+
+
+print(my_min(8, 13, 4, 42, 120, 7, 1))
