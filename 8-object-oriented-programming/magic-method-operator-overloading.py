@@ -1,5 +1,19 @@
 """
-Lesson 3 - Magic Methods
+Lesson 3 - Magic Methods & Operator Overloading
+
+This course is complex, so some supplementary materials are provided to facilitate the learning process.
+
+**Introducing Python Magic Methods**
+https://www.datacamp.com/tutorial/introducing-python-magic-methods
+https://www.analyticsvidhya.com/blog/2021/08/explore-the-magic-methods-in-python/
+
+
+**The whole OOP Lesson is useful**
+https://www.programiz.com/python-programming/operator-overloading
+https://www.geeksforgeeks.org/operator-overloading-in-python/
+
+
+
 """
 import random
 
