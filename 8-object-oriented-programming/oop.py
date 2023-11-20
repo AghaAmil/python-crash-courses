@@ -95,7 +95,3 @@ class SubClass(Super):
 
 
 SubClass().func2()
-
-"""
-Lesson 4 - Data Hiding
-"""
