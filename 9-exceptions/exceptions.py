@@ -73,3 +73,56 @@ try:
 except ValueError:
     print('Please enter a number')
 
+"""
+Lesson 3 - finally, else
+"""
+
+try:
+    print(1 / 0)
+except ZeroDivisionError:
+    print('Division by Zero Error')
+finally:
+    print('This code will run no matter what')
+
+# else
+
+try:
+    print(1)
+except ZeroDivisionError:
+    print(2)
+else:
+    print(3)
+
+try:
+    print(1 / 0)
+except ZeroDivisionError:
+    print(4)
+else:
+    print(5)
+
+"""
+
+You are making a digital menu to order food.
+The menu is stored as a list of items.
+Your program needs to take the index of the item as input and output the item name.
+
+In case the index is not valid, you should output "Item not found".
+In case the index is valid and the item name is output successfully, you should output "Thanks for your order".
+
+Sample Input
+2
+
+Sample Output
+Cheeseburger
+Thanks for your order
+"""
+
+menu = ['Fries', 'Sandwich', 'Cheeseburger', 'Coffee', 'Soda']
+
+try:
+    index = int(input())
+    print(menu[index])
+except:
+    print('Item not found')
+else:
+    print('Thanks for your order')
