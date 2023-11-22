@@ -120,9 +120,35 @@ Thanks for your order
 menu = ['Fries', 'Sandwich', 'Cheeseburger', 'Coffee', 'Soda']
 
 try:
-    index = int(input())
+    index = int(input('Enter a number to choose your food: '))
     print(menu[index])
 except:
     print('Item not found')
 else:
     print('Thanks for your order')
+
+"""
+Lesson 4 - Raising Exceptions
+"""
+
+num = 102
+if num > 100:
+    raise ValueError
+
+name = "123"
+# raise NameError("Invalid name!")
+
+"""
+You are making a program to post tweets. Each tweet must not exceed 42 characters.
+Complete the program to raise an exception, in case the length of the tweet is more than 42 characters.
+"""
+
+tweet = input('Enter your message: ')
+
+try:
+    if len(tweet) > 42:
+        raise ValueError
+except:
+    print("Error")
+else:
+    print("Posted")
