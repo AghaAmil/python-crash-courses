@@ -93,3 +93,29 @@ print(lst)
 
 # blank space
 print('')
+
+
+# Python program to illustrate *args for a variable number of arguments
+def my_func_1(*args):
+    for word in args:
+        print(word)
+
+
+my_func_1('my', 'name', 'is', 'Amirhossein', 'Moravveji')
+
+# blank space
+print('')
+
+
+# Another example
+def my_func_2(arg1, *args):
+    print(f'This is the first argument: {arg1}')
+
+    for words in args:
+        print(f'This is the rest of the arguments: {words}')
+
+
+my_func_2('hello', 'world', 'of', 'python', '!')
+
+# blank space
+print('')
