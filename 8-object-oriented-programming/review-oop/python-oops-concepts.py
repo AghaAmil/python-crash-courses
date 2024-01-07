@@ -75,7 +75,6 @@ class Employee(Person):
         # invoking the __init__ of the parent class
         Person.__init__(self, name, uid)
 
-
     def details(self):
         print('***The Employee Complete Details***')
         print(f'Employee name is {self.name}')
@@ -93,5 +92,52 @@ emp1.details()
 
 print('')
 guest.details()
+
+print('\n')
+
+"""
+Polymorphism simply means having many forms.
+"""
+
+print('This code demonstrates the concept of inheritance and method overriding in Python classes')
+print('-----------------------------------------------------------------------------------------')
+
+
+class Bird:
+
+    def intro(self):
+        print('There are many different types of bird in the world.')
+
+    def flight(self):
+        print('Most of the birds can fly while some cannot.')
+
+
+class Sparrow(Bird):
+
+    def flight(self):
+        print('Sparrows can fly. They are smart, too.')
+
+
+class Ostrich(Bird):
+
+    def flight(self):
+        print('Ostriches cannot fly. They are too fat.')
+
+
+new_bird = Bird()
+new_bird.intro()
+new_bird.flight()
+
+print('')
+
+sparrow_1 = Sparrow()
+sparrow_1.intro()
+sparrow_1.flight()
+
+print('')
+
+ostrich_1 = Ostrich()
+ostrich_1.intro()
+ostrich_1.flight()
 
 
