@@ -68,9 +68,92 @@ class Fullname:
 
 print('Python has a particular method called __str__(). that is used to define how a class object should be '
       'represented as a string.')
+print('-----------------------------------------------------------------------------------------------------'
+      '------------------------')
 
 user_1 = Fullname('Amirhossein', 'Moravveji')
 print(user_1)
 
 # blank lines
 print('\n')
+
+"""
+Python3 program to show that the variables with a value assigned in the class declaration, are class variables and 
+variables inside methods and constructors are instance variables.
+"""
+
+
+class Cats:
+    # Class Variable
+    animal = 'cat'
+
+    # The init method or constructor
+    def __init__(self, breed, color):
+        # Instance Variable
+        self.breed = breed
+        self.color = color
+
+
+# objects of the class Cats
+Tom = Cats('Persian', 'grey')
+Jess = Cats('Devon Rex', 'light brown')
+
+print('Instance variables are for data, unique to each instance and class variables are for attributes and methods '
+      'shared by all instances of the class.')
+print('------------------------------------------------------------------------------------------------------------'
+      '-------------------------------------')
+
+print('Tom\'s Details')
+print(f'Tom is a {Tom.animal}')
+print(f'Tom is a {Tom.breed} {Tom.animal}')
+print(f'Tom\'s color is {Tom.color}')
+
+# a blank line
+print('')
+
+print('Jess\'s Details')
+print(f'Jess is a {Jess.animal}')
+print(f'Jess is a {Jess.breed} {Jess.animal}')
+print(f'Jess\'s color is {Jess.color}')
+
+# a blank line
+print('')
+
+# Class variables can be accessed using class
+# name also
+print(f'The details of {Cats.animal} are explained above.')
+
+# blank lines
+print('\n')
+
+"""
+Defining instance variables using the normal method:
+Python3 program to show that we can create instance variables inside methods
+"""
+
+
+class Company:
+    # class variable
+    team = 'QA Team'
+
+    def __init__(self, squad):
+        # instance variable
+        self.squad = squad
+
+    # add an instance variable
+    def employee_id(self, uid):
+        self.uid = uid
+
+    # retrieves the instance variable
+    def show_id(self):
+        return self.uid
+
+
+print('Company Details:')
+print(f'This is the {Company.team}')
+
+c1 = Company('SnappClub')
+c1.employee_id('#7724')
+
+print(c1.squad)
+print(c1.show_id())
